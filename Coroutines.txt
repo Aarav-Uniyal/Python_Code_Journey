@@ -1,0 +1,10 @@
+Coroutines are a special type of function that deliberately yield control over to the caller, but does not end its context in the process, instead maintaining it in an idle state.
+They benefit from the ability to keep their data throughout their lifetime and, unlike functions, can have several entry points for suspending and resuming execution.
+
+Coroutines in Python work in a very similar way to Generators. Both operate over data, so let's keep the main differences simple:
+
+Generators produce data
+
+Coroutines consume data
+
+The distinct handling of the keyword yield determines whether we are manipulating one or the other.
